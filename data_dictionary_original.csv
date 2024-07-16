@@ -1,0 +1,56 @@
+tableName,shape,colName,dataType,strLength,uniqueValues
+account,"(4500, 4)",account_id,int(11),,2; 17; 22; 36; 49; 50; 57; 71; 72; 75
+account,"(4500, 4)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+account,"(4500, 4)",frequency,varchar(18),18,POPLATEK MESICNE; POPLATEK TYDNE; POPLATEK PO OBRATU
+account,"(4500, 4)",date,date,,1995-03-24; 1993-02-26; 1997-07-07; 1996-02-21; 1997-05-30; 1994-09-27; 1996-11-24; 1995-09-21; 1993-01-27; 1996-08-28
+card,"(892, 4)",card_id,int(11),,1; 2; 3; 4; 5; 7; 8; 9; 10; 11
+card,"(892, 4)",disp_id,int(11),,9; 19; 41; 42; 51; 56; 60; 76; 77; 79
+card,"(892, 4)",type,varchar(7),7,gold; classic; junior
+card,"(892, 4)",issued,date,,1998-10-16; 1998-03-13; 1995-09-03; 1998-11-26; 1995-04-24; 1998-06-11; 1998-05-20; 1997-10-25; 1996-12-07; 1996-09-11
+client,"(5369, 4)",client_id,int(11),,2; 3; 22; 23; 28; 58; 59; 66; 77; 83
+client,"(5369, 4)",gender,varchar(1),1,F; M
+client,"(5369, 4)",birth_date,date,,1970-12-13; 1945-02-04; 1940-10-09; 1956-12-01; 1960-07-03; 1919-09-22; 1929-01-25; 1938-02-21; 1935-10-16; 1943-05-01
+client,"(5369, 4)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",disp_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",client_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",type,varchar(9),9,OWNER; DISPONENT
+district,"(77, 16)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+district,"(77, 16)",A2,varchar(19),19,Hl.m. Praha; Benesov; Beroun; Kladno; Kolin; Kutna Hora; Melnik; Mlada Boleslav; Nymburk; Praha - vychod
+district,"(77, 16)",A3,varchar(15),15,Prague; central Bohemia; south Bohemia; west Bohemia; north Bohemia; east Bohemia; south Moravia; north Moravia
+district,"(77, 16)",A4,int(11),,1204953; 88884; 75232; 149893; 95616; 77963; 94725; 112065; 81344; 92084
+district,"(77, 16)",A5,int(11),,0; 80; 55; 63; 65; 60; 38; 95; 61; 35
+district,"(77, 16)",A6,int(11),,0; 26; 29; 30; 23; 28; 19; 36; 22; 27
+district,"(77, 16)",A7,int(11),,0; 6; 4; 1; 7; 9; 10; 2; 3; 5
+district,"(77, 16)",A8,int(11),,1; 2; 3; 0; 4; 5
+district,"(77, 16)",A9,int(11),,1; 5; 6; 4; 8; 7; 2; 9; 10; 11
+district,"(77, 16)",A10,"decimal(4,1)",,100.0; 46.7; 41.7; 67.4; 51.4; 51.5; 63.4; 69.4; 55.3; 36.5
+district,"(77, 16)",A11,int(11),,12541; 8507; 8980; 9753; 9307; 8546; 9920; 11277; 8899; 10124
+district,"(77, 16)",A12,"decimal(4,1)",,0.2; 1.6; 1.9; 4.6; 3.8; 2.9; 2.2; 1.2; 3.3; 0.5
+district,"(77, 16)",A13,"decimal(3,2)",,0.43; 1.85; 2.21; 5.05; 4.43; 4.02; 2.87; 1.44; 3.97; 0.54
+district,"(77, 16)",A14,int(11),,167; 132; 111; 109; 118; 126; 130; 127; 149; 141
+district,"(77, 16)",A15,int(11),,85677; 2159; 2824; 5244; 2616; 2640; 4289; 5179; 2987; 3810
+district,"(77, 16)",A16,int(11),,99107; 2674; 2813; 5892; 3040; 3120; 4846; 4987; 2487; 4316
+loan,"(682, 7)",loan_id,int(11),,4959; 4961; 4962; 4967; 4968; 4973; 4986; 4988; 4989; 4990
+loan,"(682, 7)",account_id,int(11),,2; 19; 25; 37; 38; 67; 97; 103; 105; 110
+loan,"(682, 7)",date,date,,1994-01-05; 1996-04-29; 1997-12-08; 1998-10-14; 1998-04-19; 1996-05-02; 1997-08-10; 1997-12-06; 1998-12-05; 1997-09-08
+loan,"(682, 7)",amount,int(11),,80952; 30276; 318480; 110736; 165960; 102876; 265320; 352704; 162576; 88440
+loan,"(682, 7)",duration,int(11),,24; 12; 60; 48; 36
+loan,"(682, 7)",payments,"decimal(6,2)",,3373.00; 2523.00; 5308.00; 2307.00; 6915.00; 8573.00; 7370.00; 7348.00; 4516.00; 8734.00
+loan,"(682, 7)",status,varchar(1),1,A; B; D; C
+order,"(6471, 6)",order_id,int(11),,29401; 29402; 29403; 29404; 29405; 29406; 29407; 29408; 29409; 29410
+order,"(6471, 6)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 10; 11
+order,"(6471, 6)",bank_to,varchar(2),2,YZ; ST; QR; WX; CD; AB; UV; GH; IJ; KL
+order,"(6471, 6)",account_to,int(11),,87144583; 89597016; 13943797; 83084338; 24485939; 59972357; 26693541; 5848086; 37390208; 44486999
+order,"(6471, 6)",amount,"decimal(6,1)",,2452.0; 3372.7; 7266.0; 1135.0; 327.0; 3539.0; 2078.0; 1285.0; 2668.0; 3954.0
+order,"(6471, 6)",k_symbol,varchar(8),8,SIPO; UVER; ; POJISTNE; LEASING
+trans,"(0, 10)",trans_id,int(11),,
+trans,"(0, 10)",account_id,int(11),,
+trans,"(0, 10)",date,date,,
+trans,"(0, 10)",type,varchar(6),6,
+trans,"(0, 10)",operation,varchar(14),14,
+trans,"(0, 10)",amount,int(11),,
+trans,"(0, 10)",balance,int(11),,
+trans,"(0, 10)",k_symbol,varchar(11),11,
+trans,"(0, 10)",bank,varchar(2),2,
+trans,"(0, 10)",account,int(10) unsigned,,

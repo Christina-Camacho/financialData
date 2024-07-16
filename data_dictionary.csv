@@ -1,0 +1,126 @@
+tableName,shape,colName,dataType,strLength,uniqueValues
+LoanStatus,"(827, 12)",account_id,bigint(20),,1447; 1583; 8645; 8713; 8899; 8931; 8982; 9031; 9199; 9263
+LoanStatus,"(827, 12)",client_id,bigint(20),,1755; 1917; 10662; 10746; 10963; 11004; 11063; 11064; 11123; 11327
+LoanStatus,"(827, 12)",loanDate,date,,1997-06-03; 1996-08-24; 1998-12-08; 1998-07-24; 1995-12-25; 1997-01-30; 1994-10-12; 1997-05-03; 1996-09-11; 1997-05-08
+LoanStatus,"(827, 12)",loanAmount,bigint(20),,100080; 388512; 240900; 170700; 125340; 186300; 227880; 50112; 29448; 39576
+LoanStatus,"(827, 12)",loanDuration,bigint(20),,48; 60; 36; 24; 12
+LoanStatus,"(827, 12)",loanPayments,double,,2085.0; 8094.0; 4015.0; 2845.0; 2089.0; 3105.0; 6330.0; 2088.0; 2454.0; 3298.0
+LoanStatus,"(827, 12)",LoanStatus_A,bigint(20),,0; 1
+LoanStatus,"(827, 12)",LoanStatus_B,bigint(20),,0; 1
+LoanStatus,"(827, 12)",LoanStatus_C,bigint(20),,1; 0
+LoanStatus,"(827, 12)",LoanStatus_D,bigint(20),,0; 1
+LoanStatus,"(827, 12)",diff,double,,97995.0; 380418.0; 236885.0; 167855.0; 123251.0; 183195.0; 221550.0; 48024.0; 26994.0; 36278.0
+LoanStatus,"(827, 12)",perLeft,double,,2.0; 3.0; 4.0; 8.0
+account,"(4500, 4)",account_id,int(11),,2; 17; 22; 36; 49; 50; 57; 71; 72; 75
+account,"(4500, 4)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+account,"(4500, 4)",frequency,varchar(50),50,monthly_issuance; weekly_issuance; issuance_after_transaction
+account,"(4500, 4)",date,date,,1995-03-24; 1993-02-26; 1997-07-07; 1996-02-21; 1997-05-30; 1994-09-27; 1996-11-24; 1995-09-21; 1993-01-27; 1996-08-28
+account_client_junction,"(5369, 2)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+account_client_junction,"(5369, 2)",client_id,int(11),,1; 6; 7; 8; 9; 12; 13; 14; 19
+card,"(892, 4)",card_id,int(11),,1; 2; 3; 4; 5; 7; 8; 9; 10; 11
+card,"(892, 4)",disp_id,int(11),,9; 19; 41; 42; 51; 56; 60; 76; 77; 79
+card,"(892, 4)",type,varchar(7),7,gold; classic; junior
+card,"(892, 4)",issued,date,,1998-10-16; 1998-03-13; 1995-09-03; 1998-11-26; 1995-04-24; 1998-06-11; 1998-05-20; 1997-10-25; 1996-12-07; 1996-09-11
+client,"(5369, 4)",client_id,int(11),,2; 3; 22; 23; 28; 58; 59; 66; 77; 83
+client,"(5369, 4)",gender,varchar(1),1,F; M
+client,"(5369, 4)",birth_date,date,,1970-12-13; 1945-02-04; 1940-10-09; 1956-12-01; 1960-07-03; 1919-09-22; 1929-01-25; 1938-02-21; 1935-10-16; 1943-05-01
+client,"(5369, 4)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+demographic,"(5369, 36)",client_id,bigint(20),,1682; 1691; 1700; 1701; 1707; 1724; 1733; 1748; 1755; 1763
+demographic,"(5369, 36)",account_id,bigint(20),,1390; 1397; 1404; 1408; 1422; 1429; 1440; 1447; 1454; 1458
+demographic,"(5369, 36)",birth_date,date,,1956-09-07; 1978-02-08; 1949-03-09; 1945-06-11; 1951-02-18; 1934-10-21; 1974-07-20; 1976-12-31; 1965-08-18; 1967-12-07
+demographic,"(5369, 36)",gender,text,,M; F
+demographic,"(5369, 36)",AuthorizationType,text,,OWNER; AUTHORIZED_PERSON
+demographic,"(5369, 36)",disp_id,bigint(20),,1682; 1691; 1700; 1701; 1707; 1724; 1733; 1748; 1755; 1763
+demographic,"(5369, 36)",cardType,text,,junior; gold; classic
+demographic,"(5369, 36)",age_group,text,,35-44; 18-24; 45-54; 55-64; 25-34; Under 18; 65 or over
+demographic,"(5369, 36)",joint_account,bigint(20),,0; 1
+demographic,"(5369, 36)",loan_flag,bigint(20),,0; 1
+demographic,"(5369, 36)",district_id,bigint(20),,69; 21; 7; 10; 68; 57; 64; 65; 46; 29
+demographic,"(5369, 36)",district name,text,,Jesenik; Tabor; Melnik; Praha - vychod; Frydek - Mistek; Hodonin; Zlin; Znojmo; Nachod; Rokycany
+demographic,"(5369, 36)",region,text,,north Moravia; south Bohemia; central Bohemia; south Moravia; east Bohemia; west Bohemia; north Bohemia; Prague
+demographic,"(5369, 36)",noOfInhabitants,bigint(20),,42821; 103347; 94725; 92084; 228848; 161954; 197099; 114200; 112709; 45714
+demographic,"(5369, 36)",binNoOfInhabitants,text,,Low; Medium; High
+demographic,"(5369, 36)",unemploymentRate95,double,,2.0; 1.0; 4.0; 6.0; 3.0; 0.0; 5.0; 7.0
+demographic,"(5369, 36)",unemploymentRate96,bigint(20),,7; 2; 3; 1; 5; 6; 4; 0; 9; 8
+demographic,"(5369, 36)",unemploymentRateDiff,double,,0.0; 1.0; 2.0
+demographic,"(5369, 36)",avgSalary,bigint(20),,8173; 9104; 9920; 10124; 9893; 8720; 9624; 8403; 8369; 8843
+demographic,"(5369, 36)",binAvgSalary,text,,Low; Medium; High
+demographic,"(5369, 36)",NoOfCrime95,double,,2299.0; 4289.0; 3810.0; 5623.0; 3729.0; 4484.0; 2157.0; 2854.0; 818.0
+demographic,"(5369, 36)",NoOfCrime96,bigint(20),,1358; 2354; 4846; 4316; 5887; 3651; 4265; 2718; 2618; 888
+demographic,"(5369, 36)",binNoOfCrime95,text,,Unknown; Medium; High; Low
+demographic,"(5369, 36)",binNoOfCrime96,text,,Low; Medium; High
+demographic,"(5369, 36)",noEnterpreneursPer1000,bigint(20),,124; 123; 130; 141; 96; 116; 145; 105; 117; 113
+demographic,"(5369, 36)",noOfCities,bigint(20),,3; 7; 6; 5; 8; 10; 4; 9; 1; 11
+demographic,"(5369, 36)",<499,bigint(20),,4; 87; 38; 55; 15; 21; 29; 101; 48; 52
+demographic,"(5369, 36)",500-1999,bigint(20),,13; 16; 28; 29; 40; 37; 41; 20; 10; 26
+demographic,"(5369, 36)",2000-9999,bigint(20),,5; 7; 1; 4; 18; 20; 10; 8; 6; 0
+demographic,"(5369, 36)",>10000,bigint(20),,1; 3; 2; 4; 0; 5
+demographic,"(5369, 36)",ratioInhabitants,bigint(20),,48; 67; 63; 47; 57; 75; 44; 74; 56; 82
+demographic,"(5369, 36)",loanDate,date,,1997-06-03; 1996-08-24; 1998-12-08; 1998-07-24; 1995-12-25; 1997-01-30; 1994-10-12; 1997-05-03; 1996-09-11
+demographic,"(5369, 36)",loanAmount,double,,100080.0; 388512.0; 240900.0; 170700.0; 125340.0; 186300.0; 227880.0; 50112.0; 29448.0
+demographic,"(5369, 36)",loanDuration,double,,48.0; 60.0; 36.0; 24.0; 12.0
+demographic,"(5369, 36)",loanPayments,double,,2085.0; 8094.0; 4015.0; 2845.0; 2089.0; 3105.0; 6330.0; 2088.0; 2454.0
+demographic,"(5369, 36)",loanStatus,text,,C; D; A; B
+disp,"(5369, 4)",disp_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",client_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+disp,"(5369, 4)",type,varchar(50),50,OWNER; AUTHORIZED_PERSON
+district,"(77, 16)",district_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+district,"(77, 16)",district name,varchar(255),255,Hl.m. Praha; Benesov; Beroun; Kladno; Kolin; Kutna Hora; Melnik; Mlada Boleslav; Nymburk; Praha - vychod; Praha - zapad; Pribram; Rakovnik; Ceske Budejovice; Cesky Krumlov; Jindrichuv Hradec; Pelhrimov; Pisek; Prachatice; Strakonice; Tabor; Domazlice; Cheb; Karlovy Vary; Klatovy; Plzen - mesto; Plzen - jih; Plzen - sever; Rokycany; Sokolov; Tachov; Ceska Lipa; Decin; Chomutov; Jablonec n. Nisou; Liberec; Litomerice; Louny; Most; Teplice; Usti nad Labem; Havlickuv Brod; Hradec Kralove; Chrudim; Jicin; Nachod; Pardubice; Rychnov nad Kneznou; Semily; Svitavy; Trutnov; Usti nad Orlici; Blansko; Brno - mesto; Brno - venkov; Breclav; Hodonin; Jihlava; Kromeriz; Prostejov; Trebic; Uherske Hradiste; Vyskov; Zlin; Znojmo; Zdar nad Sazavou; Bruntal; Frydek - Mistek; Jesenik; Karvina; Novy Jicin; Olomouc; Opava; Ostrava - mesto; Prerov; Sumperk; Vsetin
+district,"(77, 16)",region,varchar(255),255,Prague; central Bohemia; south Bohemia; west Bohemia; north Bohemia; east Bohemia; south Moravia; north Moravia
+district,"(77, 16)",noOfInhabitants,int(11),,1204953; 88884; 75232; 149893; 95616; 77963; 94725; 112065; 81344; 92084
+district,"(77, 16)",<499,int(11),,0; 80; 55; 63; 65; 60; 38; 95; 61; 35
+district,"(77, 16)",500-1999,int(11),,0; 26; 29; 30; 23; 28; 19; 36; 22; 27
+district,"(77, 16)",2000-9999,int(11),,0; 6; 4; 1; 7; 9; 10; 2; 3; 5
+district,"(77, 16)",>10000,int(11),,1; 2; 3; 0; 4; 5
+district,"(77, 16)",noOfCities,int(11),,1; 5; 6; 4; 8; 7; 2; 9; 10; 11
+district,"(77, 16)",ratioInhabitants,int(11),,100; 47; 42; 67; 51; 52; 63; 69; 55; 37
+district,"(77, 16)",avgSalary,int(11),,12541; 8507; 8980; 9753; 9307; 8546; 9920; 11277; 8899; 10124
+district,"(77, 16)",unemploymentRate95,int(11),,0; 2; 5; 4; 3; 1; 6; 7
+district,"(77, 16)",unemploymentRate96,int(11),,0; 2; 5; 4; 3; 1; 8; 9; 7; 6
+district,"(77, 16)",noEnterpreneursPer1000,int(11),,167; 132; 111; 109; 118; 126; 130; 127; 149; 141
+district,"(77, 16)",noOfCrime95,int(11),,85677; 2159; 2824; 5244; 2616; 2640; 4289; 5179; 2987; 3810
+district,"(77, 16)",noOfCrime96,int(11),,99107; 2674; 2813; 5892; 3040; 3120; 4846; 4987; 2487; 4316
+districtWBins,"(77, 20)",district_id,bigint(20),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+districtWBins,"(77, 20)",district name,text,,Hl.m. Praha; Benesov; Beroun; Kladno; Kolin; Kutna Hora; Melnik; Mlada Boleslav; Nymburk; Praha - vychod
+districtWBins,"(77, 20)",region,text,,Prague; central Bohemia; south Bohemia; west Bohemia; north Bohemia; east Bohemia; south Moravia; north Moravia
+districtWBins,"(77, 20)",noOfInhabitants,bigint(20),,1204953; 88884; 75232; 149893; 95616; 77963; 94725; 112065; 81344; 92084
+districtWBins,"(77, 20)",<499,bigint(20),,0; 80; 55; 63; 65; 60; 38; 95; 61; 35
+districtWBins,"(77, 20)",500-1999,bigint(20),,0; 26; 29; 30; 23; 28; 19; 36; 22; 27
+districtWBins,"(77, 20)",2000-9999,bigint(20),,0; 6; 4; 1; 7; 9; 10; 2; 3; 5
+districtWBins,"(77, 20)",>10000,bigint(20),,1; 2; 3; 0; 4; 5
+districtWBins,"(77, 20)",noOfCities,bigint(20),,1; 5; 6; 4; 8; 7; 2; 9; 10; 11
+districtWBins,"(77, 20)",ratioInhabitants,bigint(20),,100; 47; 42; 67; 51; 52; 63; 69; 55; 37
+districtWBins,"(77, 20)",avgSalary,bigint(20),,12541; 8507; 8980; 9753; 9307; 8546; 9920; 11277; 8899; 10124
+districtWBins,"(77, 20)",unemploymentRate95,double,,0.0; 2.0; 5.0; 4.0; 3.0; 1.0; 6.0; 7.0
+districtWBins,"(77, 20)",unemploymentRate96,bigint(20),,0; 2; 5; 4; 3; 1; 8; 9; 7; 6
+districtWBins,"(77, 20)",noEnterpreneursPer1000,bigint(20),,167; 132; 111; 109; 118; 126; 130; 127; 149; 141
+districtWBins,"(77, 20)",noOfCrime95,double,,85677.0; 2159.0; 2824.0; 5244.0; 2616.0; 2640.0; 4289.0; 5179.0; 2987.0; 3810.0
+districtWBins,"(77, 20)",noOfCrime96,bigint(20),,99107; 2674; 2813; 5892; 3040; 3120; 4846; 4987; 2487; 4316
+districtWBins,"(77, 20)",binAvgSalary,text,,High; Medium; Low
+districtWBins,"(77, 20)",binNoOfInhabitants,text,,High; Medium; Low
+districtWBins,"(77, 20)",binnoOfCrime95,text,,High; Medium; Low; Unknown
+districtWBins,"(77, 20)",binnoOfCrime96,text,,High; Medium; Low
+loan,"(682, 7)",loan_id,int(11),,4959; 4961; 4962; 4967; 4968; 4973; 4986; 4988; 4989; 4990
+loan,"(682, 7)",account_id,int(11),,2; 19; 25; 37; 38; 67; 97; 103; 105; 110
+loan,"(682, 7)",date,date,,1994-01-05; 1996-04-29; 1997-12-08; 1998-10-14; 1998-04-19; 1996-05-02; 1997-08-10; 1997-12-06; 1998-12-05; 1997-09-08
+loan,"(682, 7)",amount,int(11),,80952; 30276; 318480; 110736; 165960; 102876; 265320; 352704; 162576; 88440
+loan,"(682, 7)",duration,int(11),,24; 12; 60; 48; 36
+loan,"(682, 7)",payments,"decimal(6,2)",,3373.00; 2523.00; 5308.00; 2307.00; 6915.00; 8573.00; 7370.00; 7348.00; 4516.00; 8734.00
+loan,"(682, 7)",loanStatus,varchar(2),2,A; B; D; C
+orders,"(6471, 6)",order_id,int(11),,29401; 29402; 29403; 29404; 29405; 29406; 29407; 29408; 29409; 29410
+orders,"(6471, 6)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 10; 11
+orders,"(6471, 6)",bank_to,varchar(2),2,YZ; ST; QR; WX; CD; AB; UV; GH; IJ; KL; EF; MN; OP
+orders,"(6471, 6)",account_to,int(11),,87144583; 89597016; 13943797; 83084338; 24485939; 59972357; 26693541; 5848086; 37390208; 44486999
+orders,"(6471, 6)",amount,"decimal(6,1)",,2452.0; 3372.7; 7266.0; 1135.0; 327.0; 3539.0; 2078.0; 1285.0; 2668.0; 3954.0
+orders,"(6471, 6)",k_symbol,varchar(50),50,leasing
+trans,"(1056320, 10)",trans_id,int(11),,1; 5; 6; 7; 8; 9; 10; 11; 12; 13
+trans,"(1056320, 10)",account_id,int(11),,1; 2; 3; 4; 5; 6; 7; 8; 9; 10
+trans,"(1056320, 10)",date,date,,1995-03-24; 1995-04-13; 1995-05-13; 1995-06-13; 1995-07-13; 1995-08-13; 1995-09-13; 1995-10-13; 1995-11-13; 1995-12-13
+trans,"(1056320, 10)",type,varchar(50),50,credit; withdrawal
+trans,"(1056320, 10)",operation,varchar(50),50,deposit; Transfer_from_account; Transfer_to_account; cash_withdrawal; credit_card_withdrawal
+trans,"(1056320, 10)",amount,int(11),,1000; 3679; 2452; 540; 180; 870; 150; 210; 720; 420
+trans,"(1056320, 10)",balance,int(11),,1000; 4679; 20977; 26835; 30415; 28903; 22714; 23318; 21721; 20249
+trans,"(1056320, 10)",k_symbol,varchar(50),50,bills; internal_services; loans;  ; insurance; pension; interest_credited; penalty_interest
+trans,"(1056320, 10)",bank,varchar(2),2,AB; YZ; ST; QR; WX; CD; UV; KL; GH; OP; IJ; EF; MN
+trans,"(1056320, 10)",account,int(10) unsigned,,41403269; 87144583; 66487163; 0; 89597016; 13943797; 83084338; 24485939; 59972357
